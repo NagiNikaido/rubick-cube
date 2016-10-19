@@ -1,4 +1,4 @@
-# rubick-cube
+# rubik-cube
 
 ------
 
