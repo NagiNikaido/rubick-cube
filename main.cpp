@@ -11,11 +11,14 @@ const char color[10]="RWOBGY";
 // Left -- 4
 // Down -- 5
 
-class RubickCube{
+class RubikCube{
 private:
 	int faces[6][3][3];
+	void rotate(int main_face,int first,int second,int third,int fourth){
+
+	}
 public:
-	
+
 	void input(istream & is){
 		//Back
 		for(int i=2;i>=0;i--)
@@ -33,7 +36,7 @@ public:
 			for(int j=0;j<3;j++)
 				is >> faces[3][i][j];
 	}
-	void dump(ostream & os){
+	void output(ostream & os){
 		//Back
 		for(int i=2;i>=0;i--){
 			os << ' ' << ' ' << ' ' << ' ' << ' ' << ' ';
@@ -60,6 +63,6 @@ public:
 int main()
 {
 	cube.input(cin);
-	cube.dump(cout);
+	cube.output(cout);
 	return 0;
 }
